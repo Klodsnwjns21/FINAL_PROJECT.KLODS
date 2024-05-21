@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ</title>
+<link rel="stylesheet" href="faq.css">
+</head>
+<body>
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-item">
+        <h3>What services do you offer?</h3>
+        <div class="faq-answer">
+            <p>We offer a wide range of web development services, including website design, front-end and back-end development, e-commerce solutions, content management systems (CMS) development, website maintenance, and more. Whether you need a simple brochure website or a complex web application, we have the expertise to meet your requirements.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <h3>How long does it take to complete a project?</h3>
+        <div class="faq-answer">
+            <p>The time to complete a project depends on various factors, including its complexity, scope, and requirements. We work closely with our clients to establish realistic timelines and milestones. Typically, smaller projects can be completed in a matter of weeks, while larger projects may take several months. Rest assured, we strive to deliver high-quality results within agreed-upon deadlines.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <h3>Can you redesign an existing website?</h3>
+        <div class="faq-answer">
+            <p>Yes, we specialize in website redesign and can breathe new life into your existing site. Whether your current website needs a modern facelift, improved functionality, or enhanced user experience, we can work with you to revamp it according to your goals and preferences.</p>
+        </div>
+    </div>
+</div>
+<div class="back-button">
+    <a href="index.html">Back</a>
+</div>
+</div>
+</div>
+
+<script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

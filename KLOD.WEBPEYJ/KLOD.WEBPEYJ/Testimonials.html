@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonials</title>
+<link rel="stylesheet" href="testimonials.css">
+</head>
+<body>
+<header>
+<h1>Testimonials</h1>
+<nav>
+    <ul>
+        <li><a href="portfolio.html" target="_self">Portfolio</a></li>
+        <li><a href="Blog.html" target="_self">Blog</a></li>
+        <li><a href="Resume.html" target="_self">Resume</a></li>
+        <li><a href="Services.html" target="_self">Services</a></li>
+        <li><a href="Testimonials.html" target="_self">Testimonials</a></li>
+        <li><a href="FAQ.html" target="_self">FAQ</a></li>
+        <li><a href="error.html" target="_self">Error</a></li>
+    </ul>
+</nav>
+</header>
+
+<div class="testimonial">
+    <div class="testimonial-text" class="container">
+        <img src="hanni.jpg"Image">
+        <p>The quality of their work speaks volumes. Our new website not only showcases the professionalism of our brand but also enhances user experience, ultimately driving engagement and conversions. Mr. Dinoy and company paid meticulous attention to detail, ensuring every aspect of the site was polished to perfection.</p>
+        <p class="name">Phạm Ngọc Hân</p>
+        <p class="affiliation">Client</p>
+    </div>
+</div>
+<div class="testimonial">
+     <div class="testimonial-text" class="container">
+         <img src="mikha.jpg.jpg" alt="Image">
+         <p>Thanks to Mr. Dinoy's innovative approach and attention to detail, our online presence has been transformed, and we've seen a significant increase in traffic and engagement on our site. Their dedication to excellence and commitment to delivering results make them a trusted partner that we wholeheartedly recommend to anyone seeking top-notch web development services.</p>
+         <p class="name">Mikhaela Janna Lim</p>
+         <p class="affiliation">Client</p>
+     </div>
+</div>      
+</div>
+  <button class="prev" onclick="moveSlide(-1)">❮</button>
+  <button class="next" onclick="moveSlide(1)">❯</button>
+  
+<footer>
+    <script>
+        let slideIndex = 0;
+
+function showSlide(n) {
+  const slides = document.getElementsByClassName("testimonial");
+  if (n >= slides.length) { slideIndex = 0; }
+  if (n < 0) { slideIndex = slides.length - 1; }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex].style.display = "block";
+}
+
+function moveSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+showSlide(slideIndex);
+
+    </script>
+    <a href="index.html" class="back-button">Back</a>
+</footer>
+</body>
+</html>
